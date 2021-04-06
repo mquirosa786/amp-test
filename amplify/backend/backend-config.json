@@ -7,7 +7,7 @@
     }
   },
   "auth": {
-    "reactappfb57d572": {
+    "reactapp993c8480": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],

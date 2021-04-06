@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "reactappfb57d572_identitypool_fb57d572",
+    "identityPoolName": "reactapp993c8480_identitypool_993c8480",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "reactafb57d572",
-    "userPoolName": "reactappfb57d572_userpool_fb57d572",
+    "resourceNameTruncated": "reacta993c8480",
+    "userPoolName": "reactapp993c8480_userpool_993c8480",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -18,7 +18,9 @@
     "passwordPolicyMinLength": 8,
     "passwordPolicyCharacters": [],
     "requiredAttributes": [
-        "email"
+        "email",
+        "family_name",
+        "name"
     ],
     "userpoolClientGenerateSecret": false,
     "userpoolClientRefreshTokenValidity": 30,
@@ -28,10 +30,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "reactafb57d572_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "reacta993c8480_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "fb57d572",
-    "resourceName": "reactappfb57d572",
+    "sharedId": "993c8480",
+    "resourceName": "reactapp993c8480",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -49,8 +51,13 @@
     "usernameAttributes": [
         "email, phone_number"
     ],
+    "triggers": "{}",
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
+    "parentStack": {
+        "Ref": "AWS::StackId"
+    },
+    "permissions": [],
     "dependsOn": []
 }
