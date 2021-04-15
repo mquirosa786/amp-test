@@ -1,0 +1,8 @@
+type Book @model {
+  id: ID!
+  name: String!
+  description: String
+  author: String
+  year: Int
+  testField1: String
+}
